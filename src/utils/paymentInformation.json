@@ -1,0 +1,19 @@
+{
+    "returnCode": 1000,
+    "returnDesc": "success",
+    "receiptMsgCustomer": "beko Campaign",
+    "receiptMsgMerchant": "beko Campaign Merchant",
+    "paymentInfoList": [
+      {
+        "paymentProcessorID": 67,
+        "paymentActionList": [
+          {
+            "paymentType": 3,
+            "amount": 100,
+            "currencyID": 949,
+            "vatRate": 800
+          }
+        ]
+      }
+    ]
+  }

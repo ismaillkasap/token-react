@@ -1,0 +1,67 @@
+{
+  "env": {
+    "browser": true,
+    "es6": true,
+    "node": true,
+    "jest": true
+  },
+  "extends": ["react-app", "airbnb"],
+  "globals": {
+    "Atomics": "readonly",
+    "SharedArrayBuffer": "readonly"
+  },
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "ecmaVersion": 2018,
+    "sourceType": "module"
+  },
+  "plugins": ["react", "jest"],
+  "rules": {
+    "prefer-const": 1,
+    "no-unused-vars": 1,
+    "react/prop-types": 2,
+    "no-console": "off",
+    "jsx-quotes": ["error", "prefer-single"],
+    "object-curly-spacing": ["warn", "always"],
+    "computed-property-spacing": ["warn", "always"],
+    "array-bracket-spacing": ["warn", "always"],
+    "react/jsx-child-element-spacing": "warn",
+    "react/jsx-one-expression-per-line": 0,
+    "react/require-default-props": [2, {
+      "forbidDefaultForRequired": false
+    }],
+    "react/forbid-prop-types": 2,
+    "react/jsx-curly-spacing": [
+      1,
+      {
+        "children": true,
+        "allowMultiline": true,
+        "when": "always",
+        "spacing": {
+          "objectLiterals": "never"
+        }
+      }
+    ],
+    "react/jsx-props-no-spreading": [
+      0,
+      {
+        "html": "ignore",
+        "custom": "ignore"
+      }],
+    "react/jsx-key": 2,
+    "linebreak-style": 0,
+    "react/jsx-filename-extension": [1, {
+      "extensions": [".js", ".jsx"]
+    }],
+    "no-await-in-loop": "off"
+  },
+  "settings": {
+    "import/resolver": {
+      "node": {
+        "paths": ["src"]
+      }
+    }
+  }
+}
